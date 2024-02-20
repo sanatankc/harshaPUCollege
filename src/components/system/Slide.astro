@@ -1,0 +1,115 @@
+---
+import { Image } from "astro:assets"
+const { slides: slidesData, id } = Astro.props
+
+const slides = slidesData.map(({ 
+  image, 
+  position = 'top',
+  alt = 'slide-img'
+}, i) => {
+    return {
+      slide: image,
+      position,
+      picture: false,
+      alt
+    }
+}).reverse()
+
+---
+<div class="relative w-full h-full" data-slides={id}>
+  {
+    slides.map(({ slide, position, picture, alt }, i) =>
+      picture ? (
+        <picture
+          class:list={[
+            "slideshow-item w-full h-full absolute top-0 left-0 bg-no-repeat bg-cover",
+            i === 0 ? "opacity-1" : "opacity-0",
+          ]}
+          style={{
+            transition: "1s all ease-in-out",
+            backgroundPosition: position,
+          }}
+          data-slide={id}
+        >
+          {slide.map(({ src, media }) => (
+            <source srcset={src} media={media} class="w-full h-full object-cover" style={{
+              objectPosition: position
+            }} />
+          ))}
+          <img src={slide[0]} alt={alt} class="w-full h-full object-cover" style={{
+            objectPosition: position
+          }} />
+        </picture>
+      ) : (
+        <Image
+          width={1920}
+          height={1080}
+          alt=""
+          class:list={[
+            "slideshow-item w-full h-full absolute top-0 left-0 object-no-repeat object-cover",
+            i === 0 ? "opacity-1" : "opacity-0",
+          ]}
+          src={slide}
+          style={{
+            objectPosition: position,
+            transition: "1s all ease-in-out",
+          }}
+          data-slide={id}
+        />
+      )
+    )
+  }
+</div>
+
+
+<script>
+  const slideshowElements = Array.from(
+    document.querySelectorAll<HTMLElement>(".slideshow-item")
+  );
+
+  // slideshowItems.forEach(slideshow => {
+  //   if (slideshow) {
+  //     slideshow
+  //   }
+  // })
+
+  let slideshowItems = {}
+
+  // group by slideshow.dataset.slide
+  slideshowElements.forEach(slideshow => {
+    const id = slideshow.dataset.slide
+    if (!slideshowItems[id]) {
+      slideshowItems[id] = []
+    }
+    slideshowItems[id].push(slideshow)
+  })
+
+  function moveSlides(items: Array<HTMLElement>, slideshowIndex : number) {
+    items.forEach((item, i) => {
+      if (i === slideshowIndex) {
+        item.style.opacity = "1";
+        return;
+      } else {
+        item.style.opacity = "0";
+      }
+    });
+  }
+
+  function initSlide(slides: Array<HTMLElement>) {
+    let slideshowIndex = 0;
+    moveSlides(slides, slideshowIndex);
+    setInterval(() => {
+      slideshowIndex = (slideshowIndex + 1) % slides.length;
+      moveSlides(slides, slideshowIndex);
+    }, 3000)
+  }
+
+  
+  Object.keys(slideshowItems).forEach((slideshowId: string) => {
+    initSlide(slideshowItems[slideshowId])
+  })
+
+
+ 
+
+</script>

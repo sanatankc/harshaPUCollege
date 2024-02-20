@@ -1,0 +1,95 @@
+---
+// import Heading from "../system/Heading.astro";
+import Text from "./system/Text.astro";
+import ConnectItem from "./ConnectItem.astro";
+
+type ContactDetails = {
+  label: string;
+  value: string;
+  type: 'contact' | 'mail' | 'address' | 'time',
+}
+interface Campus {
+  details: {
+    [key: string]: ContactDetails | undefined; // Add index signature
+    phoneNo?: ContactDetails,
+    mail?: ContactDetails,
+    address?: ContactDetails,
+    time?: ContactDetails,
+  }
+  mapEmbedLink: string;
+}
+
+// const { 
+//     details,
+//     mapEmbedLink = "s"
+//   } = Astro.props as Campus
+
+const details = {
+  phoneNo: {
+    label: "Call us On",
+    value: "+91 80 2802 3600, +91 94835 20215, +91 94835 20214",
+    type: "contact",
+  },
+  mail: {
+    label: "Mail us at",
+    value: "harshainternationalpublicschoo@gmail.com",
+    type: "mail",
+  },
+  address: {
+    label: "We are here",
+    value:
+      "No. 193/1, Byraveshwaranagar, Sondekoppa Circle, NH 4, Nelamangala, Bangalore - 562 123, Karnataka, India.",
+    type: "address",
+  },
+  workingHours: {
+    label: "Working Hours",
+    value:
+      "Mon-Sat 9:00 AM to 1:30 PM",
+    type: "time",
+  },
+}
+
+
+const mapEmbedLink = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124355.09184403122!2d77.3138072457684!3d13.093062725822767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae2575f84dbc3b%3A0x6af875dad07962e4!2sHarsha%20International%20Public%20School!5e0!3m2!1sen!2sin!4v1706909739815!5m2!1sen!2sin'
+---
+
+<div class="px-[100px] py-[90px] max-md:pb-[30px] max-md:px-6 bg-white">
+        <Text type="h2" class="text-center">Connect with <span>HIPS</span></Text>
+        <div class='flex justify-between gap-8 mt-10 text-black items-center max-md:flex-col max-md:px-0 max-md:mt-6 max-md:mb-8'>
+        <div class='h-full w-full'>
+            <div class="flex flex-col">
+                {
+                    Object.keys(details).map((key,index) => {
+                        return <ConnectItem
+                                    label={
+                                        details[key]?.label
+                                    }
+                                    title={
+                                        details[key]?.value
+                                    }
+                                    type={
+                                        details[key]?.type
+                                    }
+                                    style={{
+                                        borderBottomWidth: index === Object.keys(details).length - 1 ? '0px' : 'initial',
+                                        }}
+                                />
+                    })
+                }
+
+        </div>
+
+        <div class="pt-[20px]" />
+        <div class='h-[352px] max-md:w-full bg-red rounded-lg overflow-hidden'>
+            <iframe
+            width="100%"
+            height="100%"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src={mapEmbedLink}
+            ></iframe>
+        </div>
+        </div>
+</div>

@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Shape Hairline';
+    src: url('Shape-HairlineItalic.eot');
+    src: local('Shape Hairline Italic'), local('Shape-HairlineItalic'),
+        url('Shape-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-HairlineItalic.woff2') format('woff2'),
+        url('Shape-HairlineItalic.woff') format('woff'),
+        url('Shape-HairlineItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-Black.eot');
+    src: local('Shape Black'), local('Shape-Black'),
+        url('Shape-Black.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Black.woff2') format('woff2'),
+        url('Shape-Black.woff') format('woff'),
+        url('Shape-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-Bold.eot');
+    src: local('Shape Bold'), local('Shape-Bold'),
+        url('Shape-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Bold.woff2') format('woff2'),
+        url('Shape-Bold.woff') format('woff'),
+        url('Shape-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-BlackItalic.eot');
+    src: local('Shape Black Italic'), local('Shape-BlackItalic'),
+        url('Shape-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-BlackItalic.woff2') format('woff2'),
+        url('Shape-BlackItalic.woff') format('woff'),
+        url('Shape-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-BoldItalic.eot');
+    src: local('Shape Bold Italic'), local('Shape-BoldItalic'),
+        url('Shape-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-BoldItalic.woff2') format('woff2'),
+        url('Shape-BoldItalic.woff') format('woff'),
+        url('Shape-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-RegularItalic.eot');
+    src: local('Shape Regular Italic'), local('Shape-RegularItalic'),
+        url('Shape-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-RegularItalic.woff2') format('woff2'),
+        url('Shape-RegularItalic.woff') format('woff'),
+        url('Shape-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-Regular.eot');
+    src: local('Shape Regular'), local('Shape-Regular'),
+        url('Shape-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Regular.woff2') format('woff2'),
+        url('Shape-Regular.woff') format('woff'),
+        url('Shape-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-LightItalic.eot');
+    src: local('Shape Light Italic'), local('Shape-LightItalic'),
+        url('Shape-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-LightItalic.woff2') format('woff2'),
+        url('Shape-LightItalic.woff') format('woff'),
+        url('Shape-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-MediumItalic.eot');
+    src: local('Shape Medium Italic'), local('Shape-MediumItalic'),
+        url('Shape-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-MediumItalic.woff2') format('woff2'),
+        url('Shape-MediumItalic.woff') format('woff'),
+        url('Shape-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-ThinItalic.eot');
+    src: local('Shape Thin Italic'), local('Shape-ThinItalic'),
+        url('Shape-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-ThinItalic.woff2') format('woff2'),
+        url('Shape-ThinItalic.woff') format('woff'),
+        url('Shape-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-Medium.eot');
+    src: local('Shape Medium'), local('Shape-Medium'),
+        url('Shape-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Medium.woff2') format('woff2'),
+        url('Shape-Medium.woff') format('woff'),
+        url('Shape-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape Super';
+    src: url('Shape-SuperItalic.eot');
+    src: local('Shape Super Italic'), local('Shape-SuperItalic'),
+        url('Shape-SuperItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-SuperItalic.woff2') format('woff2'),
+        url('Shape-SuperItalic.woff') format('woff'),
+        url('Shape-SuperItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-SemiBoldItalic.eot');
+    src: local('Shape SemiBold Italic'), local('Shape-SemiBoldItalic'),
+        url('Shape-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Shape-SemiBoldItalic.woff2') format('woff2'),
+        url('Shape-SemiBoldItalic.woff') format('woff'),
+        url('Shape-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-Thin.eot');
+    src: local('Shape Thin'), local('Shape-Thin'),
+        url('Shape-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Thin.woff2') format('woff2'),
+        url('Shape-Thin.woff') format('woff'),
+        url('Shape-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape Super';
+    src: url('Shape-Super.eot');
+    src: local('Shape Super'), local('Shape-Super'),
+        url('Shape-Super.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Super.woff2') format('woff2'),
+        url('Shape-Super.woff') format('woff'),
+        url('Shape-Super.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape Hairline';
+    src: url('Shape-Hairline.eot');
+    src: local('Shape Hairline'), local('Shape-Hairline'),
+        url('Shape-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Hairline.woff2') format('woff2'),
+        url('Shape-Hairline.woff') format('woff'),
+        url('Shape-Hairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-Light.eot');
+    src: local('Shape Light'), local('Shape-Light'),
+        url('Shape-Light.eot?#iefix') format('embedded-opentype'),
+        url('Shape-Light.woff2') format('woff2'),
+        url('Shape-Light.woff') format('woff'),
+        url('Shape-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shape';
+    src: url('Shape-SemiBold.eot');
+    src: local('Shape SemiBold'), local('Shape-SemiBold'),
+        url('Shape-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Shape-SemiBold.woff2') format('woff2'),
+        url('Shape-SemiBold.woff') format('woff'),
+        url('Shape-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+

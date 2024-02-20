@@ -1,0 +1,190 @@
+---
+import Constrain from '../system/Constrain.astro';
+import Text from '../system/Text.astro';
+import { Image } from 'astro:assets';
+import DeckCard from '../DeckCardWithGallery.astro';
+import bulletStar from '../../images/bulletStar.svg'
+
+import basketball from '../../images/basketball.png'
+// import dance from '../../images/dance.png'
+
+// import music from '../../images/music.png'
+// import theatre from '../../images/theatre.png'
+
+import art from '../../images/coscholastics/art.png'
+// import dance from '../../images/coscholastics/dance.png'
+import music from '../../images/coscholastics/music.png'
+import yoga from '../../images/coscholastics/yoga.png'
+import dance from '../../images/extraCurricular/dance.jpg'
+
+import theatre from '../../images/clubs/theatre.png'
+import math from '../../images/extraCurricular/mathLab1.jpg'
+import language from '../../images/extraCurricular/language1.jpg'
+import atheletics1 from '../../images/extraCurricular/atheletics1.jpg'
+import meditation from '../../images/extraCurricular/meditation1.jpg'
+
+
+const deckCardWithDescriptionFacility = [
+    {
+        "src": dance,
+        "caption": "Dance",
+        "description": "Dancing, with its rhythms and practice, connects mind, body, and soul, teaching discipline for life."
+    },
+    {
+        "src": yoga,
+        "caption": "Yoga",
+        "description": "Promoting a healthy life, our Yoga teachers guide students through meditation techniques to ease academic stress and enhance overall well-being."
+    },
+    {
+        "src": music,
+        "caption": "Vocal and Instrumental Music",
+        "description": "Play an instrument or sing for a memory boost, stress relief, and confidence, with HIPS providing focused training in both practical and theoretical aspects."
+    },
+    {
+        "src": art,
+        "caption": "Art",
+        "description": "Artistic expression, like painting or drawing, allows one to creatively release emotions, providing a freeing escape from stress and limitations."
+    }
+]
+
+const deckCardWithDescriptionClub = [
+    {
+        "src": theatre,
+        "caption": "Theatre",
+        "description": "Our theatre club provides students with hands-on experience in acting, script writing, makeup, set designing, and more, led by industry experts."
+    },
+    {
+        "src": meditation,
+        "caption": "Meditation",
+        "description": "In our medication club, we teach students various breathing and stretching techniques that will help them easily deal with stressful situations."
+    },
+    {
+        "src": math,
+        "caption": "Mathletes",
+        "description": "Join our mathletes club, where we make maths fun and help students fall in love with the subject through interactive teaching methods."
+    },
+    {
+        "src": atheletics1,
+        "caption": "Athletics",
+        "description": "Promoting overall well-being, our athletic club, led by skilled instructors, fosters sports mastery, propelling students to state and national competitions."
+    },
+    {
+        "src": language,
+        "caption": "Language",
+        "description": "At our language club, join us for interactive language learning, where we explore diverse languages as a hobby or a tool for global communication."
+    },
+    // {
+    //     "src": theatre,
+    //     "caption": "Home Science",
+    //     "description": "Home science focuses on maximising family satisfaction through effective resource use, covering areas like food, nutrition, and human development."
+    // }
+]
+
+---
+<div class="py-14 max-md:py-8 relative text-center flex flex-col items-center text-white bg-white" style={{
+  background: 'rgba(59, 138, 224, 0.06)',
+}}>
+  <!-- <Image src={overviewRegisterPageBG} class='w-screen h-[130px] max-md:h-[60px] bg-cover bg-top absolute top-0 left-0 -z-1' role="presentation" alt="decoration" /> -->
+  <!-- <div class="p-4 max-md:p-1" /> -->
+    <Text type='h2' class='mt-3 text-black'><span>Customised </span>Learning</Text>
+    <Text type="base" class="mt-[16px] text-center max-w-[65%] max-md:max-w-[90%] max-md:w-full">Explore a variety of student clubs, offering personalized academic paths.</Text>
+    <p class="p-3 max-md:pt-0" />
+  <Constrain class="flex flex-col w-full items-center gap-8 max-md:gap-0">  
+    <div class="flex flex-row-reverse gap-[64px] w-full justify-between mt-12 text-black max-w-[1170px] max-md:w-full max-md:flex-col max-md:items-center">
+      <div class="flex flex-col items-start text-left max-md:order-2 max-md:px-8">
+        <Text type="h3" class="tracking-[-0.96px]"><span>Co-Scholastic</span> Activities</Text>
+        <div class="pt-4" />
+        <Text type="base">Discover many opportunities with a wide range of co-curricular activities designed for your child's personal growth.</Text>
+        <div class="pt-[30px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Yoga and Meditation</Text>
+        </div> 
+        <div class="pt-[23px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Dance</Text>
+        </div>
+        <div class="pt-[23px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Vocal and Instrumental Music</Text>
+        </div>
+        <div class="pt-[23px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Art</Text>
+        </div>
+        <div class="pt-[32px]" /> 
+        <div class="cursor-pointer" data-modal-target="campus-facility2" data-target-deck="deck-campus-facility2">
+          <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-[600]'>VIEW ALL Activities</Text>
+        </div>
+      </div>
+
+      <DeckCard
+        deckContainerClass="relative left-2 max-md:-left-2"
+        cardHoverStyle={["border-accent"]}
+        gallery={deckCardWithDescriptionFacility}
+        id="campus-facility2"
+      />
+    </div>
+    <div class="pt-[50px] max-md:pt-[20px]" />
+    
+    <div class="flex  flex-row gap-[64px] w-full justify-between mt-12 text-black max-w-[1170px] max-md:w-full max-md:flex-col max-md:items-center">
+      <div class="flex flex-col items-start text-left max-md:order-2 max-md:px-8">
+        <Text type="h3" class="tracking-[-0.96px]"><span>Clubs</span> @ HIPS</Text>
+        <div class="pt-4" />
+        <Text type="base">Our campuses are a happy space where our students are encouraged to enjoy their time in school and the joys of learning, discovery and overcoming challenges.</Text>
+        <div class="pt-[30px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Photography</Text>
+        </div> 
+        <div class="pt-[23px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Mathletes</Text>
+        </div>
+        <div class="pt-[23px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Theatre</Text>
+        </div>
+        <div class="pt-[23px]" /> 
+        <div class="flex flex-row items-center">
+          <div class="w-[16px] h-[18px]">
+            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
+          </div>
+          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Language</Text>
+        </div>
+        <div class="pt-[32px]" /> 
+        <div class="cursor-pointer" data-modal-target="campus-facility1" data-target-deck="deck-campus-facility1">
+          <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-[600]'>VIEW ALL CLUBS</Text>
+        </div>
+      </div>
+
+      <DeckCard
+        deckContainerClass="relative left-2 max-md:-left-2"
+        cardHoverStyle={["border-accent"]}
+        gallery={deckCardWithDescriptionClub}
+        id="campus-facility1"
+      />
+    </div>
+
+  </Constrain>
+  
+</div>

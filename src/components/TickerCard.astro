@@ -1,0 +1,49 @@
+---
+import Text from './system/Text.astro'
+import { Image } from "astro:assets";
+// import PlusCornerBorder from "./PlusCornerBorder.astro";
+import Slide from './system/Slide.astro';
+
+
+const { item, type, fill } = Astro.props
+---
+<div class="!flex swiper-slide md:!w-[auto] flex-col items-start group ml-0 max-md:ml-0 group">
+  <div 
+    class:list={[
+      `ticker__item w-[360px] h-[250px] bg-teal-200 text-5xl 
+      text-left text-black flex items-start
+      max-md:w-full
+      justify-center border relative rounded-[8px] overflow-hidden`,
+      item.class
+    ]} style={{
+      boxShadow: '0px 0px 20px 0px rgba(0, 0, 0, 0.10)',
+    }}>
+    <Image
+      class="w-full h-full object-cover"
+      src={item.image}
+      alt={item.alt}
+      width={400}
+    />
+  </div>
+
+  <!-- <div class="h-[clamp(25px,2.187vw,42px)] bg-[#898987] w-[1px] max-md:hidden">
+  </div> -->
+  <div class="pt-[8px]"></div>
+  <Text type="base" class="group-hover:underline font-[600] ticker-text mt-1 max-md:hidden">
+    {item.text}
+  </Text>
+</div>
+
+<style>
+
+.swiper-slide  {
+  transform: scale(0.95) !important;
+  transition: transform 0.7s ease-in-out;
+}
+
+.swiper-slide-active  {
+  transform: scale(1) !important;
+  transition: transform 0.7s ease-in-out;
+}
+
+</style>

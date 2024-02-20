@@ -1,0 +1,248 @@
+:root {
+  --swiper-pagination-color: #6B63D1;
+  --swiper-pagination-bullet-inactive-color: rgba(28,28,28,0.2);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 7px;
+}
+
+body {
+  overflow-x: hidden;
+}
+html {
+  color: black;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Black.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Black.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-BlackIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-BlackIt.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Semibold.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-SemiboldIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-SemiboldIt.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Regular.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-RegularIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-RegularIt.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Light.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Light.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-LightIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-LightIt.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Thin.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Thin.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-ThinIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-ThinIt.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Thin.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Thin.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-ThinItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-ThinItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Light.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Light.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-LightItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-LightItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Regular.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-RegularItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Medium.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-MediumItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Bold.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-BoldItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .main-container::-webkit-scrollbar {
+    width: 1px !important;
+
+  }
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+  .main-container {
+    overflow-y: overlay;
+  }
+}
+ 
+.main-container::-webkit-scrollbar {
+  width: 18px;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ribbon:before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  animation: shine 2.5s ease-out infinite;
+  height: 100%;
+  background-image: linear-gradient(
+      120deg,
+      rgba(255,255,255, 0) 30%,
+      rgba(255,255,255, .8),
+      rgba(255,255,255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+  /* animation: none; Animation */
+}
+
+@keyframes shine {
+  0% {left: -100px}
+  60% {left: 100%}
+  100% {left: 100%}
+}
