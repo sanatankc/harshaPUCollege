@@ -5,17 +5,24 @@ import { Image } from 'astro:assets';
 import DeckCard from '../DeckCardWithGallery.astro';
 import bulletStar from '../../images/bulletStar.svg'
 
-import basketball from '../../images/basketball.png'
+import basketball from '../../images/extraCurricular/basketball.jpg'
+import football from '../../images/extraCurricular/football.jpg'
+import carrom from '../../images/extraCurricular/carrom.jpg'
+import billiards from '../../images/extraCurricular/billiards.jpg'
+import tableTennis from '../../images/extraCurricular/tableTennis.jpg'
+import yoga from '../../images/extraCurricular/yoga.jpg'
+import volleyball from '../../images/extraCurricular/volleyball.jpg'
 // import dance from '../../images/dance.png'
 
 // import music from '../../images/music.png'
 // import theatre from '../../images/theatre.png'
 
 import art from '../../images/coscholastics/art.png'
-// import dance from '../../images/coscholastics/dance.png'
+
 import music from '../../images/coscholastics/music.png'
-import yoga from '../../images/coscholastics/yoga.png'
+// import yoga from '../../images/extraCurricular/yoga.jpg'
 import dance from '../../images/extraCurricular/dance.jpg'
+
 
 import theatre from '../../images/clubs/theatre.png'
 import math from '../../images/extraCurricular/mathLab1.jpg'
@@ -26,8 +33,8 @@ import meditation from '../../images/extraCurricular/meditation1.jpg'
 
 const deckCardWithDescriptionFacility = [
     {
-        "src": dance,
-        "caption": "Dance",
+        "src": basketball,
+        "caption": "Basketball",
         "description": "Dancing, with its rhythms and practice, connects mind, body, and soul, teaching discipline for life."
     },
     {
@@ -36,15 +43,30 @@ const deckCardWithDescriptionFacility = [
         "description": "Promoting a healthy life, our Yoga teachers guide students through meditation techniques to ease academic stress and enhance overall well-being."
     },
     {
-        "src": music,
-        "caption": "Vocal and Instrumental Music",
+        "src": football,
+        "caption": "Football",
         "description": "Play an instrument or sing for a memory boost, stress relief, and confidence, with HIPS providing focused training in both practical and theoretical aspects."
     },
     {
-        "src": art,
-        "caption": "Art",
+        "src": carrom,
+        "caption": "Carrom",
         "description": "Artistic expression, like painting or drawing, allows one to creatively release emotions, providing a freeing escape from stress and limitations."
-    }
+    },
+    {
+        "src": billiards,
+        "caption": "Billiards",
+        "description": "Artistic expression, like painting or drawing, allows one to creatively release emotions, providing a freeing escape from stress and limitations."
+    },
+    {
+        "src": tableTennis,
+        "caption": "Table Tennis",
+        "description": "Artistic expression, like painting or drawing, allows one to creatively release emotions, providing a freeing escape from stress and limitations."
+    },
+    {
+        "src": volleyball,
+        "caption": "Volleyball",
+        "description": "Artistic expression, like painting or drawing, allows one to creatively release emotions, providing a freeing escape from stress and limitations."
+    },
 ]
 
 const deckCardWithDescriptionClub = [
@@ -116,13 +138,13 @@ const deckCardWithDescriptionClub = [
           </div>
           <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Vocal and Instrumental Music</Text>
         </div>
-        <div class="pt-[23px]" /> 
+        <!-- <div class="pt-[23px]" /> 
         <div class="flex flex-row items-center">
           <div class="w-[16px] h-[18px]">
             <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
           </div>
           <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Art</Text>
-        </div>
+        </div> -->
         <div class="pt-[32px]" /> 
         <div class="cursor-pointer" data-modal-target="campus-facility2" data-target-deck="deck-campus-facility2">
           <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-[600]'>VIEW ALL Activities</Text>
@@ -136,54 +158,7 @@ const deckCardWithDescriptionClub = [
         id="campus-facility2"
       />
     </div>
-    <div class="pt-[50px] max-md:pt-[20px]" />
-    
-    <div class="flex  flex-row gap-[64px] w-full justify-between mt-12 text-black max-w-[1170px] max-md:w-full max-md:flex-col max-md:items-center">
-      <div class="flex flex-col items-start text-left max-md:order-2 max-md:px-8">
-        <Text type="h3" class="tracking-[-0.96px]"><span>Clubs</span> @ HIPS</Text>
-        <div class="pt-4" />
-        <Text type="base">Our campuses are a happy space where our students are encouraged to enjoy their time in school and the joys of learning, discovery and overcoming challenges.</Text>
-        <div class="pt-[30px]" /> 
-        <div class="flex flex-row items-center">
-          <div class="w-[16px] h-[18px]">
-            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
-          </div>
-          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Photography</Text>
-        </div> 
-        <div class="pt-[23px]" /> 
-        <div class="flex flex-row items-center">
-          <div class="w-[16px] h-[18px]">
-            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
-          </div>
-          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Mathletes</Text>
-        </div>
-        <div class="pt-[23px]" /> 
-        <div class="flex flex-row items-center">
-          <div class="w-[16px] h-[18px]">
-            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
-          </div>
-          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Theatre</Text>
-        </div>
-        <div class="pt-[23px]" /> 
-        <div class="flex flex-row items-center">
-          <div class="w-[16px] h-[18px]">
-            <Image src={bulletStar} class="w-full h-full object-cover" alt="bullet icon" />
-          </div>
-          <Text type="sm" class="ml-[10px] tracking-normal text-[#231F20]">Language</Text>
-        </div>
-        <div class="pt-[32px]" /> 
-        <div class="cursor-pointer" data-modal-target="campus-facility1" data-target-deck="deck-campus-facility1">
-          <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-[600]'>VIEW ALL CLUBS</Text>
-        </div>
-      </div>
-
-      <DeckCard
-        deckContainerClass="relative left-2 max-md:-left-2"
-        cardHoverStyle={["border-accent"]}
-        gallery={deckCardWithDescriptionClub}
-        id="campus-facility1"
-      />
-    </div>
+    <div class="pt-[0px] max-md:pt-[20px]" />
 
   </Constrain>
   

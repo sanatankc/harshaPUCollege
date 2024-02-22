@@ -27,12 +27,12 @@ const testimonials = [
     author: 'Savitha Kumaran',
     role: 'Parent of Nikhil Kumaran (Grade 12)'
   },
-    {
-      image: yash,
-      quote: "The school has been providing the best education a student would need and it’s best school around. The management and the teachers here are focused on the betterment, well-being and overall development of the students from the very beginning of a student’s schooling. It’s a proud thing to say that both my kids studied at Harsha International Public School and that it’s their alma mater.",
-      author: 'Prashant',
-      role: 'Parent of Arya and Arpitha (Grade 3)'
-    },
+    // {
+    //   image: yash,
+    //   quote: "The school has been providing the best education a student would need and it’s best school around. The management and the teachers here are focused on the betterment, well-being and overall development of the students from the very beginning of a student’s schooling. It’s a proud thing to say that both my kids studied at Harsha International Public School and that it’s their alma mater.",
+    //   author: 'Prashant',
+    //   role: 'Parent of Arya and Arpitha (Grade 3)'
+    // },
     {
       image: nikhil,
       quote: "We have witnessed massive and exponential development in my son. he is so blessed to have teachers such as the ones in HIPS and I feel exceptionally obliged to have my son studying in HIPS. Thanks for your endurance, quality care, enthusiasm, diligent efforts and passion you provide each and every day. My son feels very comfortable and he tries to follow his teacher as a role model at home.",
@@ -80,7 +80,7 @@ const testimonials = [
 
     <div class="pt-[48px] max-md:pt-[28px]" />
 
-    <TestimonicalCard
+    <!-- <TestimonicalCard
         quote={testimonials[0].quote}
         author={testimonials[0]?.author}
         role={testimonials[0]?.role}
@@ -91,9 +91,9 @@ const testimonials = [
         imageWidth={450}
         imageHeight={450}
         imageClass="min-w-[435px] max-md:min-w-[unset] !max-h-[unset]"
-    />
+    /> -->
     <div class="flex flex-row gap-7 max-sm:flex-col max-sm:gap-0 mt-16 max-md:mt-2">
-      {[testimonials[1], testimonials[2]].map(item => {
+      {[testimonials[0], testimonials[1]].map(item => {
         return (
           <TestimonicalCard
               quote={item.quote}

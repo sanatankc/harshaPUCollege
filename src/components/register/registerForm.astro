@@ -108,14 +108,16 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
         name="selectDisabled"
         disabled
       /> -->
-    
       <SelectPill
         placeholder="Select Stream"
         id={"stream"}
         title="Please select a stream"
         options={[
-          'Science Stream',
-          'Commerce Stream',
+          'PU Science (PCMB)',
+          'PU Science (PCMC)',
+          'PU Commerce (CEBA)',
+          'PU Commerce (SEBA)',
+          'PU Commerce (HEBA)',
         ]}
         name={"stream"}
         required
@@ -208,6 +210,7 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
       // const grade = grade1 || grade2 || grade3
       // const grade = grade1 || grade2
       formData.append('form-name', 'register-form');
+      formData.append('sheetName', 'PU_College');
       // formData.delete("grade1")
       // formData.delete("grade2")
       // formData.append("grade", grade)

@@ -25,9 +25,9 @@ const {
     <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
     <div class="selectCustom js-selectCustom" aria-hidden="true" data-id={id}>
       <div class="selectCustom-trigger">{placeholder}</div>
-      <div class="selectCustom-options flex flex-row flex-wrap gap-5 !px-6 justify-between">
+      <div class="selectCustom-options flex flex-row flex-wrap gap-4 !px-6 justify-between">
         {options.map((option: string) => (
-          <div data-value={option} class="selectCustom-option flex items-center justify-center flex-1 min-w-[100px] !p-2 !px-2 border border-[#C6C6C6] rounded-md cursor-pointer transition-all" >
+          <div data-value={option} class="selectCustom-option flex items-center justify-center flex-1 min-w-[150px] !p-2 !px-2 border border-[#C6C6C6] rounded-md cursor-pointer transition-all" >
             {option}
           </div> 
         ))}
