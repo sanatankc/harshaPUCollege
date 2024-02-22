@@ -211,7 +211,7 @@ const toppers = [
             />
           </div>
 
-          <div class="w-full absolute top-0 left-0 max-md:block hidden h-[74vh] z-[2]">
+          <div class="w-full absolute top-0 left-0 max-md:block hidden h-[54vh] z-[2]">
             <Slide
               slides={[
                 { image: slide1MB, position: 'top' },
@@ -247,7 +247,7 @@ const toppers = [
             <!-- <Image src={skyBG} class="object-cover object-center" alt="Sky background" width={800} /> -->
           </div>
 
-          <div class="max-md:p-[29vh] max-md:block hidden"  />
+          <div class="max-md:p-[20vh] max-md:block hidden"  />
 
           <div class="h-full flex flex-row items-end relative z-20 self-end max-md:self-start max-md:w-full justify-center">
             <div class="flex flex-col items-start mb-10 max-md:mb-0">
@@ -311,8 +311,8 @@ const toppers = [
                 </Text>
                 <ul class="flex flex-col gap-[20px]">
                   {[
-                    'PCMB: It covers the main science subjects to prepare students for higher education in medicine, biotechnology, and research.',
-                    "PCMC: This course prepares students for higher education in engineering, enhancing computer skills for careers in IT, data science, and engineering.",
+                    '<span class="font-bold">PCMB:</span> It covers the main science subjects to prepare students for higher education in medicine, biotechnology, and research.',
+                    "<span class="font-bold">PCMC:</span> This course prepares students for higher education in engineering, enhancing computer skills for careers in IT, data science, and engineering.",
                     "Integrated JEE and NEET curriculum",
                   ].map(item => {
                     return <li class="text-xl font-[500] flex gap-[7px] items-start max-sm:text-base">
@@ -362,9 +362,9 @@ const toppers = [
                 </Text>
                 <ul class="flex flex-col gap-[20px]">
                   {[
-                  'CEBA (Computer Science, Economics, Business Studies, Accountancy): It combines computer and business skills to prepare students for higher education in the online business world.',
-                  'SEBA (Statistics, Economics, Business Studies, Accountancy): It teaches how to use data for business decisions, ideal for students interested in analytics, finance, and planning.',
-                  'HEBA (History, Economics, Business Studies, Accountancy): It mixes history with business, creating well-rounded experts ready to solve modern business problems with smart ideas.',
+                  '<span class="font-bold">CEBA</span> (Computer Science, Economics, Business Studies, Accountancy): It combines computer and business skills to prepare students for higher education in the online business world.',
+                  '<span>SEBA</span> (Statistics, Economics, Business Studies, Accountancy): It teaches how to use data for business decisions, ideal for students interested in analytics, finance, and planning.',
+                  '<span>HEBA</span> (History, Economics, Business Studies, Accountancy): It mixes history with business, creating well-rounded experts ready to solve modern business problems with smart ideas.',
                   ].map(item => {
                     return <li class="text-xl font-[500] flex gap-[7px] items-start max-sm:text-base">
                         <span class={`text-[rgb(86,65,1)] w-6 h-6 relative top-1`}>
